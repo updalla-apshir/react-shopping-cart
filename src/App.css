@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 910px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  text-decoration: none;
+  margin: 10px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 800;
+  color: #1877c9;
+}
+
+.links a {
+  text-decoration: none;
+  margin: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #000;
+}
+
+.cart {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1877c9;
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+.card {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.card .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px 0px;
+  background-color: rgba(1, 1, 31, 0.45);
+  border-radius: 0 0 10px 10px;
+}
+.card span {
+  font-size: 1.75rem;
+  margin: 10px;
+}
+
+.card button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1877c9;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.card .btn-danger {
+  background-color: #ff0000;
+}
+.cart-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background: #ffffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  grid-gap: 20px;
+  padding: 30px;
+  place-items: center;
+}
+.cart-products {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 95%;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+.cart-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  grid-gap: 20px;
+  place-content: center;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  align-content: center;
+}
+.cart-products .cart-tittle {
+}
+.cart-product .cart-image {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.cart-product .cart-image img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.delete {
+  font-size: 1.1em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-price {
+  border-top: 1px solid #ccc;
+}
+
+.payment-card {
+  border: 1px solid #ccc;
+  width: 80%;
+  border-radius: 15px;
+  padding: 0;
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+.payment-card:hover,
+.payment-card.selected {
+  background-color: #587b9a;
+  color: #faebeb;
+}
+form {
+  width: 80%;
+}
+.form-control {
+  width: 85%;
+  margin: 0 12px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 20px;
+}
+.btn {
+  width: 100%;
+  margin: 10px 12px;
+  padding: 20px;
+  background-color: #1877c9;
+  color: #fff;
+  border: 0;
+  border-radius: 15px;
+  font-size: 20px;
+}
